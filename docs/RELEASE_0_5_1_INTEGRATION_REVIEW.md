@@ -57,8 +57,8 @@
 
 | 产物 | 大小（字节） | SHA-256 |
 | --- | --- | --- |
-| [主程序 0.5.1](https://github.com/BestWishes/GameValueEditor/releases/tag/v0.5.1) | 98115418 | 5341338F6157317E833D5BB4CEE810F58DF8132CEA42CAF9672391398FD38798 |
-| [WorldApart 1.3.4](https://github.com/BestWishes/GameValueEditor-Modules/releases/tag/worldapart-v1.3.4) | 48701 | 3A327CD3E76F5FA4988B6552C68A8FDC913A45DDD8504F778B63D0A2CBE06A2A |
-| [Fzzml 2.1.4](https://github.com/BestWishes/GameValueEditor-Modules/releases/tag/fzzml-v2.1.4) | 50749 | 6D4E0F4A1569FEE0B81852A055544319C6A4AAE1242B1CF87FB483F7CB257D63 |
-| [Last Epoch 0.5.5](https://github.com/BestWishes/GameValueEditor-Modules/releases/tag/last-epoch-v0.5.5) | 73761 | 2A5DC65C72BD58D8EEDF3CFE77984B5CEB83A5A15E7C83DDB1A10CB2BC4CD7DE |
+| [主程序 0.5.1](https://github.com/HunDunJie/GameValueEditor/releases/tag/v0.5.1) | 98115418 | 5341338F6157317E833D5BB4CEE810F58DF8132CEA42CAF9672391398FD38798 |
+| [WorldApart 1.3.4](https://github.com/HunDunJie/GameValueEditor-Modules/releases/tag/worldapart-v1.3.4) | 48701 | 3A327CD3E76F5FA4988B6552C68A8FDC913A45DDD8504F778B63D0A2CBE06A2A |
+| [Fzzml 2.1.4](https://github.com/HunDunJie/GameValueEditor-Modules/releases/tag/fzzml-v2.1.4) | 50749 | 6D4E0F4A1569FEE0B81852A055544319C6A4AAE1242B1CF87FB483F7CB257D63 |
+| [Last Epoch 0.5.5](https://github.com/HunDunJie/GameValueEditor-Modules/releases/tag/last-epoch-v0.5.5) | 73761 | 2A5DC65C72BD58D8EEDF3CFE77984B5CEB83A5A15E7C83DDB1A10CB2BC4CD7DE |
 | 本地完整离线包 0.5.1：dist/GameValueEditor-v0.5.1-complete-offline-win-x64.zip | 98289773 | 10ECAA3D8C520908637B595F1E54E7048C9B3049E3E5222C754FE3A05910B012 |

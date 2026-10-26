@@ -12,8 +12,8 @@ namespace GameValueEditor.Services;
 public sealed class ApplicationUpdateService
 {
     public const string ReleaseIndexUrl =
-        "https://raw.githubusercontent.com/BestWishes/GameValueEditor/main/release-index.json";
-    private const string ReleasesApi = "https://api.github.com/repos/BestWishes/GameValueEditor/releases?per_page=50";
+        "https://raw.githubusercontent.com/HunDunJie/GameValueEditor/main/release-index.json";
+    private const string ReleasesApi = "https://api.github.com/repos/HunDunJie/GameValueEditor/releases?per_page=50";
     private readonly HttpClient _httpClient;
     private readonly string _updatesDirectory;
     private readonly string _currentVersion;

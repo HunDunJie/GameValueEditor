@@ -2782,7 +2782,7 @@ public sealed partial class MainViewModel : ObservableObject
         var cooldown = Task.Delay(TimeSpan.FromSeconds(2));
         try
         {
-            _ = Process.Start(new ProcessStartInfo("https://github.com/BestWishes/GameValueEditor")
+            _ = Process.Start(new ProcessStartInfo("https://github.com/HunDunJie/GameValueEditor")
             {
                 UseShellExecute = true
             }) ?? throw new InvalidOperationException("无法打开默认浏览器。");

@@ -50,7 +50,7 @@ public partial class MainWindow : Window
                 new MessageDialogAction("打开更新目录", () =>
                     Process.Start(new ProcessStartInfo(updateDirectory) { UseShellExecute = true })),
                 new MessageDialogAction("打开下载页", () =>
-                    Process.Start(new ProcessStartInfo("https://github.com/BestWishes/GameValueEditor/releases/latest")
+                    Process.Start(new ProcessStartInfo("https://github.com/HunDunJie/GameValueEditor/releases/latest")
                         { UseShellExecute = true })),
                 new MessageDialogAction("复制日志位置", () => Clipboard.SetText(updateFailure.LogPath)));
         }

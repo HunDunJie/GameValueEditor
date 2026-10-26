@@ -40,7 +40,7 @@
 
 2026-10-12 实际结果：
 
-- [主程序 0.5.3](https://github.com/BestWishes/GameValueEditor/releases/tag/v0.5.3) 和 [远征 0.1.2](https://github.com/BestWishes/GameValueEditor-Modules/releases/tag/play-again-expedition-v0.1.2) 都通过代理上传，独立 `VerifyOnly` 返回 `Verified=true`；线上大小/SHA-256 等于上述正式构建。只上传标准主程序 ZIP 和两文件模块 ZIP。
+- [主程序 0.5.3](https://github.com/HunDunJie/GameValueEditor/releases/tag/v0.5.3) 和 [远征 0.1.2](https://github.com/HunDunJie/GameValueEditor-Modules/releases/tag/play-again-expedition-v0.1.2) 都通过代理上传，独立 `VerifyOnly` 返回 `Verified=true`；线上大小/SHA-256 等于上述正式构建。只上传标准主程序 ZIP 和两文件模块 ZIP。
 - 注释标签指向二进制源码提交。上传前先推送构建证据文档，main 已不同于标签；上传成功。随后主程序索引提交 `9377bd5`、模块目录提交 `a6ce9b0` 推进 main，再执行同一发布入口成功复用既有资产，没有重复上传或覆盖。两个真实流程均验证祖先标签补传修复，而不只依赖隔离模拟。
 - 已读取公开 raw 索引/目录，与本地完整结构相同。索引为 0.5.3/0.5.2/0.5.1；远征快照为 0.1.2/0.0.7/0.0.6，其余三个模块条目与发布前逐项相同。带目录 `verify-release.ps1 -VerifyReleasedVersions` 完整通过：四模块编译、源/目录约束、全部宿主冒烟及原正式 ZIP 的 14 页加载。
 - 保留策略先 WhatIf 再执行：只删除 v0.5.0 的 GitHub Release/资产；源码 Git 标签与本地 ZIP 保留。远征正好三版，无需删除；其它游戏分别保持三版。认证 API 复查共 15 个正式资产，所有大小/SHA-256 与索引/目录匹配。

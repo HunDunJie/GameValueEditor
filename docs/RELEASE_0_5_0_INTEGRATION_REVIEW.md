@@ -63,7 +63,7 @@
 
 ### 线上收尾（完成）
 
-1. [v0.5.0 正式 Release](https://github.com/BestWishes/GameValueEditor/releases/tag/v0.5.0) 上传完成后，独立 `-VerifyOnly` 通过，服务器资产大小和 SHA-256 与上述标准包完全相符。远端带注释标签仍指向源码提交 `7fb7976f37336ede5d5969f12750b68cf4199b57`。
+1. [v0.5.0 正式 Release](https://github.com/HunDunJie/GameValueEditor/releases/tag/v0.5.0) 上传完成后，独立 `-VerifyOnly` 通过，服务器资产大小和 SHA-256 与上述标准包完全相符。远端带注释标签仍指向源码提交 `7fb7976f37336ede5d5969f12750b68cf4199b57`。
 2. 确认线上资产后更新发布索引，提交 `c569e48e5411668d04e42828df3b18cceb53bf19` 并推送 main。实际读取默认公开 raw 地址，验证版本依次为 0.5.0、0.4.9、0.4.8，新版源码号/大小/摘要一致。
 3. 清理前 `-WhatIf` 仅命中旧 0.4.7 Release；索引上线后再执行删除。独立认证读取确认服务器恰有上述三个正式 Release，每个只有一个正确名称的标准 ZIP，三个摘要均与索引一致。旧 0.4.7 远端发布包已删除，Git 标签经远端检查仍在；没有本地同名 ZIP备份，标签可用于重建程序，不宣称能恢复原 ZIP 字节。
 4. 索引更新后不传 `ExpectedHostSha256` 再运行正式离线入口，自动按索引核验并复用现有包，`Verified/IntegrityVerified/ModulesVerified/StartupVerified/Reused` 均为 True，状态 Current，字节与摘要保持不变。完整离线 ZIP 及核验记录仅在本地，没有作为 GitHub Release 资产上传。

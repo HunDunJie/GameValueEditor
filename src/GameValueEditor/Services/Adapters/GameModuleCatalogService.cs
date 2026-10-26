@@ -13,7 +13,7 @@ namespace GameValueEditor.Services.Adapters;
 public sealed class GameModuleCatalogService
 {
     public const string DefaultCatalogUrl =
-        "https://raw.githubusercontent.com/BestWishes/GameValueEditor-Modules/main/catalog.json";
+        "https://raw.githubusercontent.com/HunDunJie/GameValueEditor-Modules/main/catalog.json";
 
     private readonly string _modulesDirectory;
     private readonly HttpClient _httpClient;

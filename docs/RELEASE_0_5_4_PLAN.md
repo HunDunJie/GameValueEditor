@@ -45,7 +45,7 @@
 2026-10-12 实际完成：
 
 - 源码提交 `7c767f7`，标准包与注释标签 v0.5.4 均指向该提交；构建证据提交 `e71bd8f` 推进 main 后上传成功，未改变标签或包。
-- [v0.5.4 正式 Release](https://github.com/BestWishes/GameValueEditor/releases/tag/v0.5.4) 通过代理一次上传；随后独立 VerifyOnly 返回 Verified=true，线上大小/SHA-256 与上述标准包一致。只上传标准主程序 ZIP，旧正式资产未覆盖。
+- [v0.5.4 正式 Release](https://github.com/HunDunJie/GameValueEditor/releases/tag/v0.5.4) 通过代理一次上传；随后独立 VerifyOnly 返回 Verified=true，线上大小/SHA-256 与上述标准包一致。只上传标准主程序 ZIP，旧正式资产未覆盖。
 - 索引独立提交 `be0966a` 并推送。已读取公开 raw，与本地完整结构一致，保留 0.5.4/0.5.3/0.5.2。索引提交之后再次执行只读 VerifyOnly 成功复用既有资产；源码提交号与远端标签一致。
 - 完整离线包 `dist/GameValueEditor-v0.5.4-20261012.zip` 为 99,510,016 字节，SHA-256 `10E795785BC656A11D504AA4B087808C7FF66A404947A08600CA12415F7F865D`。宿主输入是上述不可变正式标准包，组合时在尚未进入索引的阶段显式提供已核验 SHA-256，不修改或绕过已存在的索引记录。
 - 包含放置斩魔录 2.1.5、不问凡尘 1.3.5、最后纪元 0.5.7、远征 0.1.2；与公开模块目录完全一致。实际四个 DLL/14 页、隔离 EXE 启动与独立冻结记录 VerifyOnly 全通过，IntegrityVerified/ModulesVerified/StartupVerified/IsLatest=true。LocalOnly=false 仅表示来源均为正式资产，完整 ZIP 没有上传 GitHub。

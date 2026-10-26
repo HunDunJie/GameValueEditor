@@ -80,7 +80,7 @@ function New-OfflineFixture {
     $moduleZip = "$mods/dist/Fixture-v1.2.3.zip"
     Write-OfflineFixtureZip $moduleZip @{ 'module.json' = ($manifest | ConvertTo-Json -Depth 30); 'Fixture.dll' = 'synthetic dll' }
     $release = @{ version = '1.2.3'; hostApiVersion = 7; minimumHostVersion = '0.4.4'; editors = @($editor)
-        compatibleBuilds = @($fingerprint); downloadUrl = 'https://github.com/BestWishes/GameValueEditor-Modules/releases/download/fixture-v1.2.3/Fixture-v1.2.3.zip'
+        compatibleBuilds = @($fingerprint); downloadUrl = 'https://github.com/HunDunJie/GameValueEditor-Modules/releases/download/fixture-v1.2.3/Fixture-v1.2.3.zip'
         sha256 = (Get-FileHash -LiteralPath $moduleZip).Hash; sizeBytes = (Get-Item -LiteralPath $moduleZip).Length }
     $entry = @{} + $manifest
     $entry.Remove('assemblyFile')
@@ -206,7 +206,7 @@ try {
     Write-OfflineFixtureZip $oldZip @{ 'module.json' = ($oldManifest | ConvertTo-Json -Depth 30); 'Fixture.dll' = 'older synthetic dll' }
     $oldRelease = @{} + $f.Release
     $oldRelease.version = '1.2.2'; $oldRelease.hostApiVersion = 6; $oldRelease.minimumHostVersion = '0.4.4'
-    $oldRelease.downloadUrl = 'https://github.com/BestWishes/GameValueEditor-Modules/releases/download/fixture-v1.2.2/Fixture-v1.2.2.zip'
+    $oldRelease.downloadUrl = 'https://github.com/HunDunJie/GameValueEditor-Modules/releases/download/fixture-v1.2.2/Fixture-v1.2.2.zip'
     $oldRelease.sha256 = (Get-FileHash -LiteralPath $oldZip).Hash; $oldRelease.sizeBytes = (Get-Item -LiteralPath $oldZip).Length
     $f.Catalog.modules[0].releases += $oldRelease
     Write-OfflineFixtureJson "$($f.Mods)/catalog.json" $f.Catalog

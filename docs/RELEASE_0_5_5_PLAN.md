@@ -38,6 +38,6 @@
 - SHA-256：`E5886EF5B95B1CCC52EF7E9FF7877C0A098F2A9E83F2B07616CB44CF29397BFF`。
 - 已从干净提交生成标准包，候选启动/更新器验证通过；生成后再次独立验证标准 ZIP 启动及包内更新器，临时占用、失败恢复、反复恢复失败、显式恢复、强制中断、安装前兼容及不安全恢复记录拒绝均通过。
 - 已推送源码及注释标签，上传后独立 `VerifyOnly` 返回 `Verified=True`，远端资产大小和 SHA-256 均与本地一致。
-- 发布地址：<https://github.com/BestWishes/GameValueEditor/releases/tag/v0.5.5>。
+- 发布地址：<https://github.com/HunDunJie/GameValueEditor/releases/tag/v0.5.5>。
 - 发布索引在上述远端核验之后单独更新，本记录随索引后续提交；保留快照为 0.5.5、0.5.4、0.5.3。历史 Release 只运行 `WhatIf` 预览，不删除真实旧资产。
 - 本次没有重发任何游戏模块，没有修改游戏存档，没有上传完整离线包。游戏分析技能在本机生效，其通用方法随扩展指南公开。
